@@ -30,4 +30,18 @@ function pruebaSpread(a,b,c){
 
 var numeros = [12,14,16];
 
-alert("La sumatoria de los números es: " + pruebaSpread(...numeros));
+//alert("La sumatoria de los números es: " + pruebaSpread(...numeros));
+
+
+// ........... funciones Callback
+
+var callback =  function(a){
+	alert(a + " el mismo desde callback");
+}
+
+var prueba = function(param, otro){
+	alert(param);
+	otro(param);
+}
+
+prueba("Javico", callback);
