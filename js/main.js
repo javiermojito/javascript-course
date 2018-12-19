@@ -100,6 +100,7 @@ setTimeout(
 */
 
 // ........... Eventos multimedia ...........
+/*
 //Llama al video del documento HTML
 var video = document.querySelector(".episodio");
 
@@ -128,3 +129,19 @@ video.addEventListener("seeking", function(){
 
     alert(mensaje);
 });
+*/
+
+// ........... Cuadros de diálogos y ventanas emergentes ...........
+
+// Ejemplo de uso de un confirm
+/*
+var a = confirm("Necesita ayuda?");
+
+a? alert("Presionó aceptar") : alert("Presionó cancelar");
+*/
+//Ejemplo de prompt con valor predeterminado
+/*
+var b = prompt("Introduzca su nombre", "Nombre");
+
+b == null? alert("Usted no puso ningún nombre") : alert("El nombre que puso fue: " + b);
+*/
