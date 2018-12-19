@@ -8,6 +8,7 @@ var barco = 424244;                 //variable cualquiera de número
 
 //Pruebas con funciones
 // ........... funciones preinicializadas
+
 function prueba(a,nombre="Javier"){
     document.write( a + " " + nombre);
 }
@@ -44,4 +45,86 @@ var prueba = function(param, otro){
 	otro(param);
 }
 
-prueba("Javico", callback);
+//prueba("Javico", callback);
+
+// ........... EVENTOS ...........
+
+// ........... Eventos del ratón
+/*
+var eventoBotonSaludar = document.querySelector("#botonSaludar");
+
+eventoBotonSaludar.addEventListener("click", function(){alert("Saludo")});
+*/
+//eventoBotonSaludar.addEventListener("mouseover", function(){alert("Saludo")});
+//eventoBotonSaludar.addEventListener("mouseout", function(){alert("Saludo")});
+//IMPORTANTE, el src="" en el html, debe estar al final de body, para asegurar que se cargaron todos los elementos.
+
+// ........... Eventos del teclado
+
+//window.addEventListener("keyup", function () {alert("Has presionado una tecla mantenida");});
+
+//para conocer la tecla que se presionó
+
+//codigo de la tecla que se presionó
+/*
+window.addEventListener("keydown",function(event){
+    alert("Se presionó la tecla: " + event.keyCode);
+});
+*/
+
+//la tecla que se presionó
+/*
+window.addEventListener("keydown",function(event){
+    alert(String.fromCharCode(event.keyCode));
+} );
+*/
+
+// ........... Eventos de carga y temporizadores ...........
+
+//Para esperar la carga del documento HTML
+//window.addEventListener("load", function(){alert("La página acaba de cargar")});
+
+//Para ejecutar acciones repetitivamente en cierto tiempo
+/*
+var tiempo = setInterval(
+    function(){
+        document.write("Esto es el interval <br>");
+    }, 3000); // Esto son 3 segundos
+*/
+//para ejecutar una acción en lo que se acabe el tiempo
+/*
+setTimeout(
+    function(){
+        document.write("Esto es el Timeout <br>");
+    }, 5000); // Esto son 5 segundos
+*/
+
+// ........... Eventos multimedia ...........
+//Llama al video del documento HTML
+var video = document.querySelector(".episodio");
+
+//Ejecuta una función luego de darle play al video
+video.addEventListener("play", function(){alert("Disfruta del episodio")});
+
+//Ejecuta una función luego de haber finalizado el video
+video.addEventListener("ended", function(){alert("Terminaste el episodio")});
+
+//Ejecuta una función cuando adelantamos el video
+video.addEventListener("seeking", function(){
+    var mensaje= "";
+    var number = 0;
+    var change = false;
+
+    if(this.currentTime >= 60)
+    {
+        number = this.currentTime/60;
+        change = true;
+    }
+    else {
+        number = this.currentTime;
+    }
+
+    change? mensaje = "Adelantaste al minuto: " + number : mensaje = "Adelantaste al segundo: " +  number;
+
+    alert(mensaje);
+});
