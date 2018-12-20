@@ -143,5 +143,52 @@ a? alert("Presionó aceptar") : alert("Presionó cancelar");
 /*
 var b = prompt("Introduzca su nombre", "Nombre");
 
-b == null? alert("Usted no puso ningún nombre") : alert("El nombre que puso fue: " + b);
+b == null? alert("Usted no puso ningún nombre") : alert("El nombre que puso fue: " + bz);
 */
+
+// ........... working with numbers ...........
+//Casting
+//var a = "10.89";
+//var b = Number(a);
+//var c = parseInt(a);
+//var d = parseFloat(a);
+
+//alert(typeof d + " " +  d);
+
+//Verificando
+//var a = 5.8659;
+//var b = "Hola";
+
+//verifica si no es un número.
+//alert(isNaN(a) + " " + isNaN(b));
+
+//verifica si es un número ENTERO.
+//alert(Number.isInteger(a) + " " + Number.isInteger(b));
+
+//Redondeo
+//alert(a.toFixed(0) + " " + a.toFixed(1) + " " + a.toFixed(2) );
+
+// ........... working with String ...........
+
+var mensaje = "Hola a todos, esto es un mensaje."
+
+// lo mismo que indexOf, retorna la posición de lo que estemos buscando
+//alert(mensaje.search("todos"));
+
+// Retorna la ultima posición de lo que estemos buscando
+//alert(mensaje.lastIndexOf('a'));
+
+// Almacena los resultados de la busqueda en un arreglo
+//var a = mensaje.match(/a/gi);
+//alert(a);
+
+// Recortar el String contando hacia la derecha
+//alert(mensaje.substr(1,5));
+
+// Recortar el String con posiciones exactas.
+//alert(mensaje.substring(7, 12));
+
+// Repetir un String
+var a = "Hola";
+
+alert(a.repeat(5));
