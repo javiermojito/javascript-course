@@ -189,6 +189,47 @@ var mensaje = "Hola a todos, esto es un mensaje."
 //alert(mensaje.substring(7, 12));
 
 // Repetir un String
-var a = "Hola";
+//var a = "Hola";
 
-alert(a.repeat(5));
+//alert(a.repeat(5));
+
+
+// ........... Arrelgos  ...........
+// Arreglos multidimensionales
+/*
+var uno =
+[
+	[10,20,30],
+	[11,22,33],
+	[12,23,34]
+];
+
+alert(uno);
+alert(uno[0]);
+alert(uno[0][0]);
+*/
+
+//Metodo push para agregar elementos al arreglo
+var uno = [2,8,1,3];
+
+//uno.push(5,6);
+//alert(uno);
+
+//Metodo pop para conocer el último elemento del arreglo.
+//alert(uno.pop());
+
+// Prueba con split
+var mensaje = "Martes,Miercoles,Lunes,Viernes,Domingo,Sábado";
+//alert(mensaje.split(",")[0]);
+
+// Pruebas de ordenamiento
+/*
+alert(uno.sort()); //Numéricamente
+alert(mensaje.split(",").sort()); //Alfabéticamente
+
+var dos = [2,"Casa",7,"Libro", 3, "Gato", 1];
+alert(dos.sort()); // Ordena primero numéricamente y luego alfabéticamente
+*/
+
+// Método reverse para invertir el orden de los elementos de un Arreglosvar uno = [1,2,3,4,5];
+alert(uno.reverse());
