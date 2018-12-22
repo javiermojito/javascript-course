@@ -232,4 +232,61 @@ alert(dos.sort()); // Ordena primero numéricamente y luego alfabéticamente
 */
 
 // Método reverse para invertir el orden de los elementos de un Arreglosvar uno = [1,2,3,4,5];
-alert(uno.reverse());
+//alert(uno.reverse());
+
+// Pruebas de for in
+//var uno = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+/*
+for (let i in uno){
+	alert(i + " - " + uno[i]);
+}
+*/
+
+// pruebas de for each
+//uno.forEach((dos,i)=> alert(i + " - " + dos));
+
+// Pruebas de find
+/*
+var uno = ["Lunes", "Martes", "Miercoles"];
+
+var buscar = uno.find(dos => dos=="Martes");
+var buscar2 = uno.find(dos => dos=="martes");
+var buscar3 = uno.find(dos => dos=="Juevess");
+
+var prueba = "Lunes";
+var buscar4 = uno.find(i => prueba);
+var buscar5 = uno.find(i => i == "Miercoles");
+
+alert(buscar);
+alert(buscar2);
+alert(buscar3);
+alert(buscar4);
+alert(buscar5);
+*/
+
+//Prueba del indexOf
+/*
+var buscarIndice = uno.findIndex(dos => dos=="Martes");
+alert(buscarIndice);
+*/
+
+//Pruebas del filter
+/*
+var dos = ["Lunes", "Martes", "Lunes", "Miercoles", "Martes", "Lunes"];
+
+var result = dos.filter(i => i == "Lunes");
+var result2 = dos.filter(i => i == "Miercoles");
+var result3 = dos.filter(i => i == "Martes");
+
+alert(result);
+alert(result2);
+alert(result3);
+*/
+// Pruevas del some
+var uno = [1,2,3,4,5,6];
+var dos = ["Lunes", "Martes", "Miercoles", "Jueves"];
+
+alert(uno.some(i => i < 3));
+alert(uno.some(i => i > 6));
+alert(dos.some(i => i == "Lunes"));
+alert(dos.some(i => i == "lunes"));
